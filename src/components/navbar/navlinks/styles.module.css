@@ -1,0 +1,24 @@
+.navLinks {
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.navLinks ul {
+    list-style: none;
+}
+
+.navLinks li {
+    text-align: end;
+    cursor: pointer;
+}
+
+.navLinks .active {
+    color: var(--green)
+}
+
+@media only screen and (max-width: 1200px) {
+    .navLinks li {
+        padding-top: 1em;
+    }
+}

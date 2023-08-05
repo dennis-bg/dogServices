@@ -1,0 +1,12 @@
+.panel {
+    height: 100vh;
+    width: 75%;
+    max-width: 400px;
+    background-color: #161C1B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 2em;
+    box-sizing: border-box;
+}
