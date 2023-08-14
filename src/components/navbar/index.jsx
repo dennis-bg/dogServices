@@ -5,6 +5,7 @@ import { NavLinks } from "./navlinks";
 import { useWindowWidth } from "../../hooks/useWindowWidth";
 import { MobileMenu } from "./mobileMenu";
 import styles from './styles.module.css'
+import { LogoSVG } from "../../svgs/logo";
 
 export const Navbar = () => {
 
@@ -18,14 +19,14 @@ export const Navbar = () => {
 
             <div className={styles.links}>
                 <Link activeClass={styles.active} to="hero" smooth={true} offset={-65} duration={1000}>
-                  <h5>DG Dog Services</h5>
+                  <LogoSVG/>
                 </Link>
 
                 {screenWidth > 1200 && <NavLinks/>}
 
             </div>
                     
-            {/* {screenWidth > 1200 && <MobileMenu/>} */}
+            {screenWidth < 1200 && <MobileMenu/>}
           </Container>
 
         
