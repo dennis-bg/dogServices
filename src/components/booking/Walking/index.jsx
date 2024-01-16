@@ -13,14 +13,14 @@ export const WalkingService = () => {
     return (
         <>
         <div style={styles}>
-            <FormattedDatePicker/>
-            <FormattedTimePicker/>
+            <FormattedDatePicker range={false}/>
+            <FormattedTimePicker range={false}/>
         </div>
         <div style={{paddingTop: "1em", width: "100%"}}>
-                <Radio.Group defaultValue="half" buttonStyle="solid">
-                    <Radio.Button value="half">Half Hour</Radio.Button>
-                    <Radio.Button value="hour">One Hour</Radio.Button>
-                </Radio.Group>
+            <Radio.Group defaultValue="half" buttonStyle="solid">
+                <Radio.Button value="half">Half Hour</Radio.Button>
+                <Radio.Button value="hour">One Hour</Radio.Button>
+            </Radio.Group>
         </div>
         <p>Pick Up Address</p>
         <Input placeholder="Pick Up Address"/>

@@ -18,7 +18,7 @@ export const ServiceSelection  = () => {
 
     return (
         <>
-            <div style={{paddingTop: "3em", paddingBottom: "3em", width: "100%"}} onChange={handleServiceSwitch}>
+            <div style={{paddingTop: "3em", paddingBottom: "1.5em", width: "100%"}} onChange={handleServiceSwitch}>
                 <Radio.Group defaultValue={Services.Walk} buttonStyle="solid">
                     <Radio.Button value={Services.Walk}>Dog Walking</Radio.Button>
                     <Radio.Button value={Services.Sit}>Dog Sitting</Radio.Button>
