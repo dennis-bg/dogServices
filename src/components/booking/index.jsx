@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TextArea from "antd/es/input/TextArea";
 import { Container } from "../common/container";
 import { Input } from 'antd';
@@ -11,9 +11,14 @@ export const Booking = () => {
 
     const [name, setName] = useState('');
     const [pet, setPet] = useState('');
-    const [service, setService] = useState(Services.Walk);
     const [notes, setNotes] = useState('');
+    const [service, setService] = useState(Services.Walk);
+    const [schedule, setSchedule] = useState({})
 
+    useEffect(() => {
+        setSchedule({})
+    }, [service])
+    
 
     const handleNameChange = (e) => {
         setName(e.target.value);
